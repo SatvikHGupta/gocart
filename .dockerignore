@@ -1,0 +1,40 @@
+# ── Dependencies (image mein fresh install honge) ──
+node_modules
+**/node_modules
+
+# ── Next.js build output (hum khud build karenge) ──
+.next
+out
+build
+
+# ── Prisma generated client (build ke waqt generate hoga) ──
+app/generated/prisma
+
+# ── Secrets — image mein KABHI nahi ──
+.env
+.env.*
+!.env.example
+
+# ── Git ──
+.git
+.gitignore
+
+# ── Docker khud ──
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# ── Docs / meta ──
+README.md
+CONTRIBUTING.md
+CODE_OF_CONDUCT.md
+LICENSE.md
+
+# ── Editor / OS ──
+.vscode
+.idea
+.DS_Store
+*.pem
+
+# ── Vercel ──
+.vercel 

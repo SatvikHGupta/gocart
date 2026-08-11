@@ -6,7 +6,11 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "prisma generate",
+    "db:migrate": "prisma migrate deploy",
+    "db:migrate:dev": "prisma migrate dev",
+    "db:studio": "prisma studio"
   },
   "dependencies": {
     "next": "15.3.5",
@@ -17,10 +21,12 @@
     "recharts": "^3.1.2",
     "date-fns": "^4.1.0",
     "lucide-react": "^0.525.0",
-    "@reduxjs/toolkit": "^2.8.2"
+    "@reduxjs/toolkit": "^2.8.2",
+    "@prisma/client": "^6.2.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4"
+    "tailwindcss": "^4",
+    "prisma": "^6.2.0"
   }
 }
